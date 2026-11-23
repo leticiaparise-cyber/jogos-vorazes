@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panem | Guia Oficial dos Distritos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="overlay">
+            <h1>PANEM</h1>
+            <p class="subtitle">"Que a sorte esteja sempre a seu favor."</p>
+            <a href="#distritos" class="btn-gold">Explorar os Distritos</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Sobre a Obra -->
+        <section id="sobre" class="container">
+            <h2>O Universo de Jogos Vorazes</h2>
+            <p>
+                Nas ruínas de uma região antes conhecida como América do Norte ergue-se <strong>Panem</strong>, 
+                uma nação dividida entre a rica e tecnológica Capital e doze distritos periféricos. 
+                Todos os anos, como lembrete da rebelião passada, cada distrito deve enviar um garoto e uma garota 
+                entre 12 e 18 anos para participar da grande competição televisada.
+            </p>
+        </section>
+
+        <!-- Seção Interativa dos Distritos -->
+        <section id="distritos" class="container">
+            <h2>Os 12 Distritos de Panem</h2>
+            <p class="instrucao">Clique em um distrito para ver sua especialidade e tributos notáveis:</p>
+            
+            <div class="grid-distritos" id="lista-distritos">
+                <!-- Os botões dos distritos serão gerados pelo JavaScript -->
+            </div>
+
+            <div id="info-distrito" class="card-detalhe oculto">
+                <h3 id="titulo-distrito"></h3>
+                <p><strong>Especialidade:</strong> <span id="especialidade-distrito"></span></p>
+                <p id="descricao-distrito"></p>
+                <p><strong>Tributos/Vencedores Notáveis:</strong> <span id="tributos-distrito"></span></p>
+            </div>
+        </section>
+
+        <!-- Simulador da Colheita -->
+        <section id="colheita" class="container colheita-box">
+            <h2>Simulador da Colheita</h2>
+            <p>Digite seu nome e descubra de qual distrito você seria sorteado:</p>
+            <div class="form-colheita">
+                <input type="text" id="nome-usuario" placeholder="Seu nome...">
+                <button id="btn-sortear" class="btn-gold">Sortear Tributo</button>
+            </div>
+            <p id="resultado-colheita" class="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto de Fã — Inspirado na trilogia de Suzanne Collins.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
